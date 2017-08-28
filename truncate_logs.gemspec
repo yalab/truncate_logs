@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["yalab"]
   spec.email         = ["rudeboyjet@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Truncate logs for too large params or fixtures.}
+  spec.description   = %q{If you use binary data post or so. Your log file is soon too large. This gem provides truncate too large params or fixutre loggings.}
+  spec.homepage      = "https://github.com/yalab/truncate_logs"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
