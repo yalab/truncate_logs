@@ -1,28 +1,36 @@
 # TruncateLogs
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/truncate_logs`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem provides too large rails logs truncated.
 
-TODO: Delete this and the text above, and describe your gem
+like that
+
+```
+  Fixture Insert (20.0ms)  INSERT INTO "photos" ("name", "content", "created_at", "updated_at") VALUES ('avatar', '[TRUNCATE 368 KB]', '2017-08-29 07:49:17.416578', '2017-08-29 07:49:17.416578')
+```
+
+```
+Processing by PhotosController#create as HTML
+Parameters: {"photo"=>{"content"=>"[TRUNCATE 1 MB]"}}
+Completed 200 OK in 0ms
+```
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'truncate_logs'
+group :development, :test do
+  gem 'truncate_logs'
+end
 ```
 
 And then execute:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install truncate_logs
+    $ bundle install
 
 ## Usage
 
-TODO: Write usage instructions here
+You should only install.
 
 ## Development
 
